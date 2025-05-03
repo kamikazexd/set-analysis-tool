@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cebirsel Küme Analiz Aracı</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="top-bar">
+    <label class="switch">
+      <input type="checkbox" id="darkModeToggle">
+      <span class="slider" data-icon="☀️"></span>
+    </label>
+    <label class="switch">
+      <input type="checkbox" id="languageToggle">
+      <span class="slider" data-icon="TR"></span>
+    </label>
+  </div>
+
+  <div class="container">
+    <h1 id="title">Cebirsel Küme Analiz Aracı</h1>
+    <label for="setInput" id="inputLabel">Koşul gir (örnek: x % 2 == 0 && x > 0 veya {1, 2, 3}):</label>
+    <input type="text" id="setInput" placeholder="Örnek: x % 2 == 0" />
+    <button onclick="evaluateInput()" id="evaluateButton">Kümeyi Hesapla ve Analiz Et</button>
+    <div id="setOutput"></div>
+    <div id="analysisOutput"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
